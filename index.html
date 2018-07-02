@@ -2,15 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Assignment 5 | JavaScript</title>
     <meta name="description" content="">
 
     <link rel="stylesheet" href="css/vendor/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
 </head>
 <body>
-  <h1 id="h1">Click Me</h1>
-
+  <div class="container">
+    <form id="form">
+      <label for="firstName">First Name</label>
+      <input type="text" name="firstName" id="firstName" />
+      <label for="lastName">Last Name</label>
+      <input type="text" name="lastName" id="lastName" />
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email"  />
+      <label for="message">Comments</label>
+      <textarea name="message" id="message"></textarea>
+      <input type="submit" id="submit"/>
+    </form>
+  </div>
 
     <script src="js/main.js"></script>
 </body>

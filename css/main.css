@@ -1,0 +1,39 @@
+body {
+  background-color: #D7FFF6;
+}
+
+.container {
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+}
+
+label {
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  color: #EC3C8C;
+}
+
+input {
+  margin-bottom: 10px;
+  width: 260px;
+}
+
+#message {
+  width: 260px;
+  height: 200px;
+}
+
+#submit {
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 10px;
+  padding: 10px;
+  color: #EC3C8C;
+  border: 1px solid #EC3C8C;
+  width: 100px;
+}
+
+:focus {
+  outline-color: #EC3C8C;
+}

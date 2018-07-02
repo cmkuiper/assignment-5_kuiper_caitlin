@@ -1,9 +1,17 @@
-var header = document.getElementById('h1');
+var submit = document.getElementById('form');
 
-header.addEventListener('click', function() {
-  var newP = document.createElement('p');
-  newP.innerHTML = 'This is click number ' + '' + click++;
-  document.getElementsByTagName('body')[0].appendChild(newP);
+submit.addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  var firstName = document.getElementById('firstName').value;
+  console.log('The firstName is: ' +' ' + firstName);
+
+  var lastName = document.getElementById('lastName').value;
+  console.log('The lastName is: ' + ' ' + lastName);
+
+  var email = document.getElementById('email').value;
+  console.log('The email is: ' + ' ' + email);
+
+  var message = document.getElementById('message').value;
+  console.log('The message is: ' + ' ' + message);
 });
-
-var click = 1;

@@ -1,17 +1,26 @@
-var submit = document.getElementById('form');
+//Listening for: button click; Action: button link is disabled and button text changes
+var button = document.getElementById('link');
 
-submit.addEventListener('submit', function(event) {
+button.addEventListener('click', function(link) {
   event.preventDefault();
+});
 
-  var firstName = document.getElementById('firstName').value;
-  console.log('The firstName is: ' +' ' + firstName);
+button.addEventListener('click', function (link){
+  button.innerHTML = "Sorry, Charlie. You're stuck here.";
+});
 
-  var lastName = document.getElementById('lastName').value;
-  console.log('The lastName is: ' + ' ' + lastName);
+//Listening for: mouseover on image; Action: background color changes
+var myImage = document.getElementById('image');
 
-  var email = document.getElementById('email').value;
-  console.log('The email is: ' + ' ' + email);
+myImage.addEventListener('mouseover', function() {
+  document.body.style.backgroundColor = '#FEFFC9';
+});
 
-  var message = document.getElementById('message').value;
-  console.log('The message is: ' + ' ' + message);
+//Listening for: mouseover on H1; Action: new paragraph is added
+var newParagraph = document.getElementById('header')
+
+newParagraph.addEventListener('mouseover', function () {
+  var myElement = document.createElement('article');
+  myElement.innerHTML = '<p>Wait, who said you were invited?</p>';
+  document.getElementsByClassName('container')[0].appendChild(myElement);
 });
